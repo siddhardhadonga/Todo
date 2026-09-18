@@ -2,12 +2,19 @@ import React, { useContext } from "react";
 import { GlobalVar } from "../Global/Index";
 
 function Index() {
-  const { isLogin } = useContext(GlobalVar);
+  const { isLogin,setIsLogin} = useContext(GlobalVar);
+  const remove=(task_no)=>{
+    let existed=isLogin.todo.find(i=>i.task_no===task_no)
+    if(existed){
+        const updateTodo=isLogin.todo.filter(i=>i.task_no!==task_no)
+        setIsLogin({...isLogin,todo: updateTodo})
+    }
+  }
   return (
     <div>
       {isLogin.todo.map((i) => {
         return (
-            <div key={i.task_no}> {i.task} </div>
+            <div key={i.task_no}> {i.task} <button onClick={()=>remove(i.task_no)}>task is completed</button></div>
         )
       })}
     </div>

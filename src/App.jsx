@@ -1,0 +1,11 @@
+
+import Navbar from './Navbar/Index'
+function App() {
+  return (
+    <div>
+    <Navbar/>
+    </div>
+  )
+}
+
+export default App

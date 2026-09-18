@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { GlobalVar } from "../Global/Index";
+import './Account.css'
 function Index() {
   const { account , setAccount} = useContext(GlobalVar);
   const [form, setForm] = useState({

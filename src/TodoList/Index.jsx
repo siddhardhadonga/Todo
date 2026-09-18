@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalVar } from "../Global/Index";
-
+import './TodoList.css'
 function Index() {
   const { isLogin,setIsLogin} = useContext(GlobalVar);
   const remove=(task_no)=>{
@@ -11,10 +11,10 @@ function Index() {
     }
   }
   return (
-    <div>
+    <div className="todo-list">
       {isLogin.todo.map((i) => {
         return (
-            <div key={i.task_no}> {i.task} <button onClick={()=>remove(i.task_no)}>task is completed</button></div>
+            <div key={i.task_no} className="todo-item"> {i.task} <button onClick={()=>remove(i.task_no)}>task is completed</button></div>
         )
       })}
     </div>

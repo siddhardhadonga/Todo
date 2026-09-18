@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { GlobalVar } from "../Global/Index";
-
+import './Todo.css'
 function Index() {
   const { isLogin, setIsLogin } = useContext(GlobalVar);
 
@@ -25,7 +25,7 @@ function Index() {
     }
   };
   return (
-    <div>
+    <div className="todo-container">
       <label>
         Task no
         <input type="text" name="task_no" value={task_no} onChange={handler} />

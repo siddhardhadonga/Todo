@@ -1,65 +1,56 @@
-.login-page {
+.mainContainer {
+    min-height: 80vh;
+    padding: 60px 20px;
+    background-color: #f1f5f9;
+}
+
+.div1 {
     width: 400px;
-    margin: 60px auto;
-    padding: 35px;
+    margin: 0 auto;
+    padding: 30px;
     background-color: white;
     border: 1px solid #d1d5db;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.login-page label {
+.div1 label {
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     color: #374151;
     font-size: 16px;
     font-weight: 600;
 }
 
-.login-page input {
+.div1 input {
     display: block;
     width: 100%;
     margin-top: 8px;
-    padding: 11px 12px;
+    padding: 10px 12px;
     border: 1px solid #9ca3af;
     border-radius: 6px;
-    color: #1f2937;
-    background-color: #ffffff;
     font-size: 15px;
+    color: #1f2937;
     outline: none;
-    transition: border-color 0.3s ease;
 }
 
-.login-page input:hover {
-    border-color: #6b7280;
-}
-
-.login-page input:focus {
+.div1 input:focus {
     border-color: #2563eb;
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
 }
 
-.login-page a {
+.div1 input:hover {
+    border-color: #6b7280;
+}
+
+.div1 button {
     display: block;
-    margin-top: 18px;
-    color: #2563eb;
-    text-align: center;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.login-page a:hover {
-    color: #1d4ed8;
-    text-decoration: underline;
-}
-
-.login-page button {
     width: 100%;
     margin-top: 20px;
     padding: 11px;
+    background-color: #2563eb;
     border: 1px solid #2563eb;
     border-radius: 6px;
-    background-color: #2563eb;
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -67,18 +58,22 @@
     transition: background-color 0.3s ease;
 }
 
-.login-page button:hover {
+.div1 button:hover {
     background-color: #1d4ed8;
 }
 
-.login-page button:active {
+.div1 button:active {
     background-color: #1e40af;
 }
 
-@media (max-width: 500px) {
-    .login-page {
-        width: calc(100% - 30px);
-        margin: 40px auto;
+@media (max-width: 600px) {
+    .mainContainer {
+        padding: 40px 15px;
+    }
+
+    .div1 {
+        width: 100%;
+        max-width: 400px;
         padding: 25px;
     }
 }

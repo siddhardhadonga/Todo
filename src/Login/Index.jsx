@@ -25,14 +25,14 @@ function Index() {
     });
   };
   return (
-    <>
+    <div className="login-page">
       {!isLogin && <Input />}
       <div>
         <button onClick={!isLogin ? login : logout}>
           {!isLogin ? "login" : "logout"}
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

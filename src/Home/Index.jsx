@@ -1,7 +1,7 @@
 import './Home.css'
 function Index() {
   return (
-    <div>
+    <div className='home-container'>
       <h1>Hi, I'm Donga Satya Siddhardha</h1>
       <h4>
         Full-Stack Developer & Technical Trainer Building robust web

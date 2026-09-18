@@ -11,31 +11,27 @@ function Index() {
 
   return (
     <>
-      <div>
-        <label>
-          username
-          <input
-            type="text"
-            name="username"
-            value={username}
-            onChange={handler}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          password
-          <input
-            type="text"
-            name="password"
-            value={password}
-            onChange={handler}
-          />
-        </label>
-      </div>
-      <div>
-        <NavLink to="/createAccount">Create an account</NavLink>
-      </div>
+      <label>
+        username
+        <input
+          type="text"
+          name="username"
+          value={username}
+          onChange={handler}
+        />
+      </label>
+
+      <label>
+        password
+        <input
+          type="text"
+          name="password"
+          value={password}
+          onChange={handler}
+        />
+      </label>
+
+      <NavLink to="/createAccount">Create an account</NavLink>
     </>
   );
 }

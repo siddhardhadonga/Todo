@@ -1,14 +1,14 @@
-.login-page {
-    width: 400px;
+.todo-container {
+    width: 450px;
     margin: 60px auto;
-    padding: 35px;
+    padding: 30px;
     background-color: white;
     border: 1px solid #d1d5db;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.login-page label {
+.todo-container label {
     display: block;
     margin-bottom: 18px;
     color: #374151;
@@ -16,50 +16,45 @@
     font-weight: 600;
 }
 
-.login-page input {
+.todo-container input,
+.todo-container textarea {
     display: block;
     width: 100%;
     margin-top: 8px;
-    padding: 11px 12px;
+    padding: 10px 12px;
     border: 1px solid #9ca3af;
     border-radius: 6px;
+    background-color: white;
     color: #1f2937;
-    background-color: #ffffff;
+    font-family: inherit;
     font-size: 15px;
     outline: none;
-    transition: border-color 0.3s ease;
+    resize: vertical;
 }
 
-.login-page input:hover {
-    border-color: #6b7280;
-}
-
-.login-page input:focus {
+.todo-container input:focus,
+.todo-container textarea:focus {
     border-color: #2563eb;
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
 }
 
-.login-page a {
+.todo-container input:hover,
+.todo-container textarea:hover {
+    border-color: #6b7280;
+}
+
+.todo-container textarea {
+    min-height: 120px;
+}
+
+.todo-container button {
     display: block;
-    margin-top: 18px;
-    color: #2563eb;
-    text-align: center;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.login-page a:hover {
-    color: #1d4ed8;
-    text-decoration: underline;
-}
-
-.login-page button {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 11px;
+    background-color: #2563eb;
     border: 1px solid #2563eb;
     border-radius: 6px;
-    background-color: #2563eb;
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -67,16 +62,16 @@
     transition: background-color 0.3s ease;
 }
 
-.login-page button:hover {
+.todo-container button:hover {
     background-color: #1d4ed8;
 }
 
-.login-page button:active {
+.todo-container button:active {
     background-color: #1e40af;
 }
 
-@media (max-width: 500px) {
-    .login-page {
+@media (max-width: 600px) {
+    .todo-container {
         width: calc(100% - 30px);
         margin: 40px auto;
         padding: 25px;
